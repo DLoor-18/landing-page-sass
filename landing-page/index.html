@@ -42,8 +42,8 @@
     <div class="header">
       <nav>
         <menu class="menu">
-          <li class="menu__item">
-            <a href="#" class="menu__link">
+          <li class="menu__item" aria-level="1">
+            <a href="#" class="menu__link" tabindex="1">
               <i aria-hidden="true">
                 <svg aria-label="Family" width="72" height="18" viewBox="0 0 72 18" fill="none"
                   xmlns="http://www.w3.org/2000/svg" style="overflow: visible;">
@@ -79,7 +79,7 @@
               </i>
             </a>
           </li>
-          <li class="menu__item menu__item--developers">
+          <li class="menu__item menu__item--developers" aria-level="1" tabindex="2">
             <span>Developers</span>
             <i class="menu__icon menu__item--developers" aria-hidden="true">
               <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -87,8 +87,8 @@
                   stroke-linejoin="round"></path>
               </svg>
             </i>
-            <menu class="menu__sub-menu">
-              <li>
+            <menu class="menu__sub-menu" aria-expanded="false">
+              <li aria-level="2">
                 <a class="menu__sub-menu__item">
                   <div class="menu__sub-menu__item__icon">
                     <i aria-hidden="true">
@@ -111,7 +111,7 @@
                   </div>
                 </a>
               </li>
-              <li>
+              <li aria-level="2">
                 <div class="menu__sub-menu__item">
                   <div class="menu__sub-menu__item__icon">
                     <i aria-hidden="true">
@@ -137,7 +137,7 @@
               </li>
             </menu>
           </li>
-          <li class="menu__item menu__item--resource">
+          <li class="menu__item menu__item--resource" aria-level="1" tabindex="3">
             <span>Resources</span>
             <i class="menu__icon menu__item--resource" aria-hidden="true">
               <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -145,31 +145,31 @@
                   stroke-linejoin="round"></path>
               </svg>
             </i>
-            <menu class="menu__sub-menu-lineal">
-              <li class="menu__sub-menu-lineal__item">
+            <menu class="menu__sub-menu-lineal" aria-expanded="false">
+              <li class="menu__sub-menu-lineal__item" aria-level="2">
                 <a href="#">
                   <span>Blog</span>
                 </a>
               </li>
-              <li class="menu__sub-menu-lineal__item">
+              <li class="menu__sub-menu-lineal__item" aria-level="2">
                 <a href="#">
                   <span>Changelog</span>
                 </a>
               </li>
-              <li class="menu__sub-menu-lineal__item">
+              <li class="menu__sub-menu-lineal__item" aria-level="2">
                 <a href="#">
                   <span>Help & Support</span>
                 </a>
               </li>
-              <li class="menu__sub-menu-lineal__item">
+              <li class="menu__sub-menu-lineal__item"  aria-level="2">
                 <a href="#">
                   <span>FAQs</span>
                 </a>
               </li>
             </menu>
           </li>
-          <li class="menu__item">
-            <a href="#" class="menu__link">
+          <li class="menu__item" aria-level="1">
+            <a href="#" class="menu__link" tabindex="4">
               <span>X (Twitter)</span>
             </a>
           </li>
@@ -188,7 +188,7 @@
   <main>
     <section class="banner">
       <div class="banner__data">
-        <h1 class="banner__data__title">Your favorite crypto wallet.</h1>
+        <h1 class="banner__data__title" aria-label>Your favorite crypto wallet.</h1>
         <p class="banner__data__description">Explore Ethereum with the best wallet for iOS. Interacting with crypto has
           never been so simple.</p>
         <div class="banner__data__buttons">
@@ -1565,31 +1565,31 @@
         </div>
         <nav>
           <ul class="footer__left__menu">
-            <li class="footer__left__menu__item">
+            <li class="footer__left__menu__item" aria-level="1">
               <span>Developers</span>
               <ul class="footer__left__menu__item__sub">
-                <li class="footer__left__menu__item__sub__item"><a href="#"><span>Documentation</span></a></li>
-                <li class="footer__left__menu__item__sub__item"><a href="#"><span>ConnectKit</span></a></li>
-                <li class="footer__left__menu__item__sub__item"><a href="#"><span>GitHub</span></a></li>
+                <li class="footer__left__menu__item__sub__item" aria-level="2"><a href="#"><span>Documentation</span></a></li>
+                <li class="footer__left__menu__item__sub__item" aria-level="2"><a href="#"><span>ConnectKit</span></a></li>
+                <li class="footer__left__menu__item__sub__item" aria-level="2"><a href="#"><span>GitHub</span></a></li>
               </ul>
             </li>
-            <li class="footer__left__menu__item">
+            <li class="footer__left__menu__item" aria-level="1">
               <span>Resources</span>
               <ul class="footer__left__menu__item__sub">
-                <li class="footer__left__menu__item__sub__item"><a href="#"><span>Audit Report</span></a></li>
-                <li class="footer__left__menu__item__sub__item"><a href="#"><span>Changelog</span></a></li>
-                <li class="footer__left__menu__item__sub__item"><a href="#"><span>Blog</span></a></li>
-                <li class="footer__left__menu__item__sub__item"><a href="#"><span>FAQs</span></a></li>
-                <li class="footer__left__menu__item__sub__item"><a href="#" download="">
+                <li class="footer__left__menu__item__sub__item" aria-level="2"><a href="#"><span>Audit Report</span></a></li>
+                <li class="footer__left__menu__item__sub__item" aria-level="2"><a href="#"><span>Changelog</span></a></li>
+                <li class="footer__left__menu__item__sub__item" aria-level="2"><a href="#"><span>Blog</span></a></li>
+                <li class="footer__left__menu__item__sub__item" aria-level="2"><a href="#"><span>FAQs</span></a></li>
+                <li class="footer__left__menu__item__sub__item" aria-level="2"><a href="#" download="">
                     <span>Press Kit</span></a></li>
               </ul>
             </li>
-            <li class="footer__left__menu__item">
+            <li class="footer__left__menu__item" aria-level="1">
               <span>Company</span>
               <ul class="footer__left__menu__item__sub">
-                <li class="footer__left__menu__item__sub__item"><a href="#"><span>Contact</span></a></li>
-                <li class="footer__left__menu__item__sub__item"><a href="#"><span>X (Twitter)</span></a></li>
-                <li class="footer__left__menu__item__sub__item"><a href="#"><span>Legal</span></a></li>
+                <li class="footer__left__menu__item__sub__item" aria-level="2"><a href="#"><span>Contact</span></a></li>
+                <li class="footer__left__menu__item__sub__item" aria-level="2"><a href="#"><span>X (Twitter)</span></a></li>
+                <li class="footer__left__menu__item__sub__item" aria-level="2"><a href="#"><span>Legal</span></a></li>
               </ul>
             </li>
           </ul>
