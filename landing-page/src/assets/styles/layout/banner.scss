@@ -31,7 +31,7 @@
 
         &__title {
             @include mixins.container-size(450px);
-            color: variables.$primary-text-color-light;
+            color: rgb(52 52 51);
             font-family: Family, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
             font-size: 68px;
             font-weight: 500;
@@ -40,9 +40,9 @@
 
         &__description {
             @include mixins.container-size(440px);
-            color: #474645;
+            color: variables.$primary-text-color-light;
             font-weight: 600;
-            font-size: 17px;
+            font-size: 18px;
             line-height: 26px;
             letter-spacing: -0.22px;
         }
@@ -55,7 +55,7 @@
             &__right {
                 padding: 12px 24px 12px 22px;
                 border-radius: 32px;
-                font-size: 1.0625rem;
+                font-size: 1.125rem;
                 letter-spacing: -0.09px;
                 font-weight: 600;
                 text-decoration: none;

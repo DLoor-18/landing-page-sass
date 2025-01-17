@@ -24,3 +24,10 @@
     line-height: 48px;
     letter-spacing: -1.35px;
 }
+
+@mixin span-list() {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: -0.22px;
+}

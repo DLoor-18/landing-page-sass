@@ -1,5 +1,5 @@
-@use '../utils/_mixins' as mixins;
-@use '../utils/variables' as variables;
+@use '../../utils/_mixins' as mixins;
+@use '../../utils/variables' as variables;
 
 .section-explore {
     @include mixins.container-size();
@@ -23,7 +23,7 @@
             background: rgb(251, 250, 249);
             border-radius: 12px;
             overflow: hidden;
-            
+
             &__info {
                 margin-top: 0.25rem;
             }

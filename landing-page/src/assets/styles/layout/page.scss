@@ -1,72 +1,8 @@
-             
-                  @font-face {
-                    font-family: "Family";
-                    src: url("../../fonts/Family-Regular.woff2") format("woff2"),url("../../fonts/Family-Regular.woff") format("woff");
-                    font-weight: 400;
-                    font-display: swap;
-                  }
-                  
-h1,h2,h3,h4,h5,h6{
-  color:var(--heading);
-  //font-feature-settings: 'ss01' on;
-}
-:root{
-  --scrollbar-width:var(--ck-scrollbar-width);
-}
-::selection {
-	background: #D8ECFC;
-	color: #008cff;
-}
-::-moz-selection {
-	background: #D8ECFC;
-	color: #008cff;
-}
-.font-mono{
-  font-family:inherit;
-  font-variant-numeric: tabular-nums;
-}
+@use '../utils/reset';
+@use './header.scss';
+@use './banner.scss';
+@use './sections.scss';
 
-:root{
-  --app-green: #34C759;
-  --app-gray: #747484;
-  --app-blue: #018DFF;
-  --app-pink: #F966AC;
-  --graphic-green: #44C67F;
-  --graphic-blue: #7DC4FF;
-  --graphic-blue-alt: #4DAFFF;
-  --graphic-blue-pale: #8ECCFF;
-  --graphic-blue-pale-alt: #6DBDFF;
-  --graphic-purple: #5F5DE7;
-  --graphic-yellow: #FFCF7B;
-  --graphic-gold: #F5B442;
-  --graphic-gold-alt: #FFA620;
-  --graphic-yellow-pale: #F6F4EF;
-  --graphic-black: #343433;
-  --graphic-gray: #E2D6C5;
-  --graphic-stone: #F2EBE0;
-  --graphic-orange: #FF5310;
-  --graphic-outline: #B2A79A;
-  --pocket: #52CB58;
-  --heading: #343433;
-  --body: #494440;
-  --body-muted: #848281;
-  --gray: #747484;
-  --gray-light: #f2f0ed;
-  --beige: #FBFAF9;
-  --beige-dark: #EAEAEA;
-  --focus: #848281;
-  --white: #FFFFFF;
-  --blue: #3784F4;
-  --blue-light: #EEFBFD;
-  --green: #44C67F;
-  --yellow: #FFBE4C;
-  --gold: #CA9230;
-  --orange: #FF5310;
-  --orange-dark: #ff2b00;
-  --red: #EF4444;
-  --purple: #9553F9;
-  --twitter-blue: #343433;
-}
 @supports (color: color(display-p3 1 1 1)) {
   :root{
     --app-green: color(display-p3 0.20392156862745098 0.7803921568627451 0.34901960784313724);

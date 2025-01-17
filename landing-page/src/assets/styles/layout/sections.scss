@@ -1,0 +1,13 @@
+@use '../utils/_variables' as variables;
+@use '../utils/mixins' as mixins;
+@use './sections/explore-section.scss';
+@use './sections/swap-section.scss';
+@use './sections/card-info-section.scss';
+
+.section-separator {
+    @include mixins.container();
+
+    hr {
+        background: variables.$third-text-color-ligth;
+    }
+}

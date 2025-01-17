@@ -1,0 +1,66 @@
+@use '../../utils/_mixins' as mixins;
+@use '../../utils/variables' as variables;
+
+.section-swap {
+   
+
+    &__data { 
+        @include mixins.container-size();
+        padding: 4.625rem 0px 5.5625rem;
+
+        &__title h1{
+            @include mixins.default-h1();
+
+        }
+
+       &__container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            padding: 3.1875rem 0px 0px;
+
+            &__step video {
+                border-radius: 12px;
+            }
+        }
+    } 
+
+    
+}
+
+.section-swap-details {
+    background: rgb(251 250 249);
+    padding: 6.5rem 0px;
+
+    &__info { 
+        @include mixins.container-size();
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 6.0625rem 5rem;
+
+        &__item {
+            display: flex;
+            flex-direction: column;
+            gap: 0.625rem;
+            
+            &__title {
+                color: rgb(0 134 252);
+                font-weight: 600;
+                font-size: 15px;
+                line-height: 20px;
+                letter-spacing: -0.09px;
+            }
+
+            &__description {
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 26px;
+                letter-spacing: -0.22px;
+                color: variables.$primary-text-color-light;
+            }
+        
+        }
+    } 
+
+    
+}
