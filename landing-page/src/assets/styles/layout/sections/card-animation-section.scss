@@ -1,9 +1,8 @@
 @use '../../utils/_mixins' as mixins;
 @use '../../utils/variables' as variables;
 
-.section-swap {
+.card-animation {
    
-
     &__data { 
         @include mixins.container-size();
         padding: 4.625rem 0px 5.5625rem;
@@ -28,7 +27,7 @@
     
 }
 
-.section-swap-details {
+.card-animation-details {
     background: rgb(251 250 249);
     padding: 6.5rem 0px;
 
@@ -39,12 +38,10 @@
         gap: 6.0625rem 5rem;
 
         &__item {
-            display: flex;
-            flex-direction: column;
-            gap: 0.625rem;
+            @include mixins.container-flex-column(0.625rem);
             
             &__title {
-                color: rgb(0 134 252);
+                color: variables.$fourth-text-color-light;
                 font-weight: 600;
                 font-size: 15px;
                 line-height: 20px;

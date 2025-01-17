@@ -1,13 +1,18 @@
 @use '../utils/_variables' as variables;
 @use '../utils/mixins' as mixins;
 @use './sections/explore-section.scss';
-@use './sections/swap-section.scss';
+@use './sections/card-animation-section.scss';
 @use './sections/card-info-section.scss';
+@use './sections/pocket-section.scss';
+@use './sections/publications-section.scss';
+@use './sections/details-section.scss';
+@use './sections/summary-section.scss';
+@use './sections/question-section.scss';
 
 .section-separator {
-    @include mixins.container();
+    @include mixins.container-flex();
 
     hr {
-        background: variables.$third-text-color-ligth;
+        background: variables.$third-text-color-light;
     }
 }

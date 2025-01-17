@@ -48,7 +48,7 @@
         }
 
         &__buttons {
-            @include mixins.container-gap(16px, center);
+            @include mixins.container-flex-gap(16px, center);
             padding-top: 16px;
 
             &__left,
@@ -63,13 +63,13 @@
                 cursor: pointer;
 
                 span {
-                    @include mixins.container-gap(12px);
+                    @include mixins.container-flex-gap(12px);
                 }
 
             }
 
             &__left {
-                color: variables.$second-text-color-ligth;
+                color: variables.$second-text-color-light;
                 background: variables.$primary-text-color-light;
             }
 

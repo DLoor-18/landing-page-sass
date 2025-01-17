@@ -6,7 +6,7 @@
     padding: 4.625rem 0px 5.5625rem;
 
     &__container {
-        @include mixins.container-gap(5.75rem, start, start);
+        @include mixins.container-flex-gap(5.75rem, start, start);
 
         &__clip {
             border-radius: 12px;
@@ -15,10 +15,8 @@
         }
 
         &__data {
-            display: flex;
-            flex-direction: column;
+            @include mixins.container-flex-column(16px);
             margin-top: 40px;
-            gap: 16px;
 
             &__theme {
                 color: rgb(212 143 0);
@@ -34,13 +32,16 @@
                 &--care {
                     color: rgb(255 62 0);
                 }
+
+                &--secure {
+                    color: variables.$fourth-text-color-light;
+                }
             }
             
 
             &__info {
-                display: flex;
-                flex-direction: column;
-                gap: 26px;
+                @include mixins.container-flex-column(26px);
+
 
                 &__title {
                     @include mixins.default-h1();
@@ -63,18 +64,13 @@
                 color: rgb(212 143 0);
                 margin: 0px;
                 padding: 0.75rem 0px 0.375rem;
-
-
-                &--care {
-                    color: rgb(255 62 0);
-                }
                 
                 li {
                     list-style: none;
                 }
 
                 &__item {
-                    @include mixins.container-gap(0.75rem);
+                    @include mixins.container-flex-gap(0.75rem);
 
                     span {
                         @include mixins.span-list;
@@ -91,6 +87,11 @@
 
                 &--care {
                     color: rgb(255 62 0)
+                }
+
+                &--secure {
+                    color: variables.$fourth-text-color-light;
+                    grid-template-columns: 1fr 1fr;
                 }
 
                 li {
@@ -126,9 +127,7 @@
             border-radius: 12px;
 
             &__data {
-                display: flex;
-                flex-direction: column;
-                gap: 1px;
+                @include mixins.container-flex-column(1px);
 
                 h5 {
                     color: variables.$primary-text-color-dark;

@@ -1,13 +1,19 @@
 @use './variables' as variables;
 
-@mixin container($justify: start, $align: center) {
+@mixin container-flex($justify: start, $align: center) {
     display: flex;
     align-items: $align;
     justify-content: $justify;
 }
 
-@mixin container-gap($gap: 0, $justify: start, $align: center) {
-    @include container($justify, $align);
+@mixin container-flex-gap($gap: 0, $justify: start, $align: center) {
+    @include container-flex($justify, $align);
+    gap: $gap;
+}
+
+@mixin container-flex-column($gap: 0){
+    display: flex;
+    flex-direction: column;
     gap: $gap;
 }
 

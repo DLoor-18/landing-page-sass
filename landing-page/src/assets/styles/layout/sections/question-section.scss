@@ -1,0 +1,15 @@
+@use '../../utils/_mixins' as mixins;
+@use '../../utils/variables' as variables;
+
+.section-question {
+    @include mixins.container-size();
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 0px;
+    padding: 6.5rem 0px 5.75rem;
+
+    &__title {
+        @include mixins.default-h1;
+    }
+
+}

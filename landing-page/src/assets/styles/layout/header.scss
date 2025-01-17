@@ -2,18 +2,19 @@
 @use '../utils/_mixins' as mixins;
 
 header {
-    background: variables.$second-text-color-ligth;
+    background: variables.$second-text-color-light;
     top: 0;
     position: sticky;
+    z-index: 10;
 }
 
 .header {
-    @include mixins.container(space-between, center);
+    @include mixins.container-flex(space-between, center);
     @include mixins.container-size();
     padding-block: 1.5rem;
 
     &__actions {
-        @include mixins.container-gap(30px);
+        @include mixins.container-flex-gap(30px);
     }
 
     &__button {
@@ -30,14 +31,14 @@ header {
 }
 
 .menu {
-    @include mixins.container-gap(4px);
+    @include mixins.container-flex-gap(4px);
     list-style: none;
 
     &__item {
         font-weight: 600;
         font-size: 15px;
         padding: 11px 10px;
-        background: variables.$second-text-color-ligth;
+        background: variables.$second-text-color-light;
         color: rgb(40, 38, 36);
         cursor: pointer;
     }
@@ -61,7 +62,7 @@ header {
 
     &__item,
     &__icon {
-        @include mixins.container-gap(3px);
+        @include mixins.container-flex-gap(3px);
     }
 
     &__icon {
@@ -98,7 +99,7 @@ header {
         top: 70px;
 
         &__item {
-            @include mixins.container-gap(16px);
+            @include mixins.container-flex-gap(16px);
 
             &__icon {
                 box-shadow: rgba(0, 0, 0, 0.04) 0px 0px 0px 1px;
@@ -113,7 +114,7 @@ header {
             &__info {
 
                 &__badge {
-                    @include mixins.container-gap(6px);
+                    @include mixins.container-flex-gap(6px);
 
                     span {
                         border-radius: 5px;

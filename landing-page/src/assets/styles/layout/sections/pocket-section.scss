@@ -1,0 +1,57 @@
+@use '../../utils/_mixins' as mixins;
+@use '../../utils/variables' as variables;
+
+.section-pocket {
+    @include mixins.container-size();
+    margin-top: 60px;
+    background: rgb(251 250 249);
+
+    &__container {
+        display: grid;
+        -webkit-box-align: center;
+        align-items: center;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5.75rem;
+        padding: 3.625rem 3.875rem 5rem;
+        background: rgb(251 250 249);
+        border-radius: 1.25rem;
+
+        &__data{
+            @include mixins.container-flex-column(18px);
+
+            &__info{
+                @include mixins.container-flex-column(26px);
+                grid-template-columns: repeat(2, 1fr);
+
+                &__title {
+                    @include mixins.default-h1;
+
+                }
+
+                &__description {
+                    color: variables.$primary-text-color-light;
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 26px;
+                    letter-spacing: -0.22px;
+                }
+            }
+        }
+
+        &__svg {
+            display: flex;
+            -webkit-box-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            align-items: center;
+
+            &__animation {
+                display: block;
+                position: absolute;
+            }
+
+        }
+
+    }
+
+}

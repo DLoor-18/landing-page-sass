@@ -2,6 +2,8 @@
 @use './header.scss';
 @use './banner.scss';
 @use './sections.scss';
+@use './carousel.scss';
+@use './footter.scss';
 
 @supports (color: color(display-p3 1 1 1)) {
   :root{
